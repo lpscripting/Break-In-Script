@@ -34,39 +34,6 @@ w1:Toggle(
     end
 ) -- Text, Flag, Enabled, Callback, Flag Location (Optional)
 
-w1:Toggle(
-    "Cat Heal",
-    "Cheal",
-    false,
-    function(toggled)
-        print(toggled)
-        _G.Bloxy = toggled
-        while _G.Bloxy == true do
-            local A_1 = "Cat"
-            local Event = game:GetService("ReplicatedStorage").RemoteEvents.Energy
-            Event:FireServer(A_1)
-            wait()
-        end
-    end
-) -- Text, Flag, Enabled, Callback, Flag Location (Optional)
-
-w1:Toggle(
-    "Apple Pie",
-    "Apie",
-    false,
-    function(toggled)
-        print(toggled)
-        _G.Bloxy = toggled
-        while _G.Bloxy == true do
-            local A_1 = 1
-            local A_2 = 42
-            local A_3 = game:GetService("Players").LocalPlayer.Backpack.Pie
-            local Event = game:GetService("ReplicatedStorage").RemoteFunctions.PieInfo
-            wait()
-        end
-    end
-) -- Text, Flag, Enabled, Callback, Flag Location (Optional)
-
 w1:Button(
     "Destroy GUI",
     function()
